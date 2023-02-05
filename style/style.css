@@ -241,7 +241,7 @@ content: "";
 
             @media (max-width: 1100px) {
                 .section1,
-                .section2{
+                .section2¬{
                     flex-direction: column;
                     padding: 0 20px;
                 }
@@ -282,3 +282,7 @@ content: "";
             gap: 10px;
         }
     }
+.footer__boxff{
+    display: flex;
+}
+    
