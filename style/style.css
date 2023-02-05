@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MB';
+}
+a{
+    text-decoration: none;
+}
+.container{
+   padding: 10px;
+    background:#282828;
+    display: flex;
+    align-items: center;
+}
+.nav__box{
+    max-width: 1110px;
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav__link{
+display: flex;
+gap: 30px;
+align-items: center;
+
+}
+.type{
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+}
+.search{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.header__main{
+    background: url(../img/headerbg.jpg) no-repeat center /cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    height: 700px;
+}
+.header__title{
+    font-family: 'POR';
+    font-size: 100px;
+    line-height: 75px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.header__link{
+    font-family: 'MM';
+    font-size: 20px;
+    line-height: 24px;
+    color:  #171718;
+    padding: 13px 18px 13px 14px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.site{
+    margin-left: 11px;
+}
+.main__box{
+    background: #151515;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+padding-top:30px ;
+padding-bottom: 55px;
+    
+}
+.section1{
+display: flex;
+align-items: center;
+max-width: 1110px;
+width: 100%;
+justify-content: center;
+gap: 30px;
+
+
+}
+.main__p{
+    font-family: 'MM';
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 27px;
+
+}
+.section2{
+    display: flex;
+    align-items: center;
+    max-width: 1110px;
+    width: 100%;
+    justify-content: space-between;  
+    margin-bottom: 30px;
+    
+}
+
+.main__p2{
+    
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.airpods{
+    max-width: 268px;
+    width: 100%;
+    height: 375px;
+}
+
+.main__info1{
+   max-width: 333px;
+   width: 100%;
+}
+.airpods{
+    max-width: 410px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pro::after{
+    content: '';
+    background: #C4C4C4;
+   display: block;
+    width: 61px;
+    height: 1px;
+   margin-left: 20px;
+   
+
+
+}
+.item{
+    max-width: 255px;
+    width: 100%;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 6px;
+
+}
+.item-title{
+    font-size: 20px;
+    line-height: 24px;
+}
+.item-p{
+    font-family: 'MR';
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: black;
+}
+.view{
+    padding: 7px 57px;
+    background: black;
+    font-size: 16px ;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-top: 17px;
+}
+.footer__box{
+    background: #282828;
+    height: 215px;
+   
+}
+.footer__box-link{
+    max-width: 1110px;
+    width: 100%;
+    height: 215px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__link{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.cards{
+    display: flex;
+    gap: 30px;
+}
+
+
+
+
+
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+.airpods::after{
+content: "";
+ background-color: #C4C4C4;
+ width: 61px;
+ height: 1px;
+ display: block;
+}
+.airpods::before{
+    content: "";
+     background-color: #C4C4C4;
+     width: 61px;
+     height: 1px;
+     display: block;
+     margin-right: 20px;
+    }
+.main__info{
+    max-width: 538px;
+    width: 100%;
+}
+.headphone1{
+    width: 100%;
+}
+    .airpods{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ .nav__type{
+   display: flex;
+   gap: 10px;
+ }
+
+    /* Медиа запросы */
+
+            @media (max-width: 1100px) {
+                .section1,
+                .section2{
+                    flex-direction: column;
+                    padding: 0 20px;
+                }
+
+                
+                @media (max-width:1000px) {
+                  .section2{
+                    flex-direction: column;
+                    margin-top: 30px;
+                  }  
+                }
+            }
+      @media (max-width:800px) {
+        .header__title{
+            font-size: 60px;
+            line-height: 60px;
+        }
+        .airpods::after{
+            display: none;
+        }
+        .airpods::before{
+            display: none;
+        }
+      }
+      @media (max-width:600px) {
+        .footer__box-link{
+            flex-direction: column;
+            gap: 10px;
+        }
+      }
+    @media (max-width: 500px) {
+        .nav__box{
+            flex-direction: column;
+           gap: 10px;
+        }
+        .nav__link{
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
